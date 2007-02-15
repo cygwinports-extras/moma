@@ -1,0 +1,59 @@
+moma
+------------------------------------------
+The Mono Migration Analyzer (MoMA) tool helps you identify issues you 
+may have when porting your .Net application to Mono. It helps pinpoint 
+platform specific calls (P/Invoke) and areas that are not yet supported 
+by the Mono project.
+
+Runtime requirements:
+  cygwin-1.2.24-2
+  libgdiplus-1.2.3-1
+  mono-1.2.3-1
+
+Canonical website:
+  http://www.mono-project.com/MoMA
+
+Canonical download:
+  http://www.go-mono.com/archive/moma/
+
+-------------------------------------------
+
+Build instructions:
+  unpack moma-1.1.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./moma-1.1.1-X.cygport all
+
+This will create:
+  /usr/src/moma-1.1.1-X-src.tar.bz2
+  /usr/src/moma-1.1.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/moma
+  /usr/lib/moma/Definitions/1.2.3-defs.zip
+  /usr/lib/moma/MoMA.exe
+  /usr/lib/moma/Moma.Analyzer.dll
+  /usr/lib/moma/Mono.Cecil.dll
+  /usr/lib/moma/Resources/button_ok.png
+  /usr/lib/moma/Resources/dialog-warning.png
+  /usr/lib/moma/Resources/list-add.png
+  /usr/lib/moma/Resources/list-remove.png
+  /usr/lib/moma/Resources/monkey.png
+  /usr/lib/moma/Resources/monoback.png
+  /usr/lib/moma/Resources/spinner.gif
+  /usr/share/doc/Cygwin/moma-1.1.1.README
+
+------------------
+
+Port Notes:
+
+----- version 1.1.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
