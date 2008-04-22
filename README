@@ -6,8 +6,8 @@ platform specific calls (P/Invoke) and areas that are not yet supported
 by the Mono project.
 
 Runtime requirements:
-  libgdiplus-1.2.6-1
-  mono-1.2.6-1
+  libgdiplus-1.9-1
+  mono-1.9.1-1
 
 Canonical website:
   http://www.mono-project.com/MoMA
@@ -18,22 +18,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack moma-1.2.6.1-X-src.tar.bz2
+  unpack moma-1.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./moma-1.2.6.1-X.cygport all
+  cygport ./moma-1.9-X.cygport all
 
 This will create:
-  /usr/src/moma-1.2.6.1-X-src.tar.bz2
-  /usr/src/moma-1.2.6.1-X.tar.bz2
+  /usr/src/moma-1.9-X-src.tar.bz2
+  /usr/src/moma-1.9-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/moma
-  /usr/lib/moma/Definitions/1.2.6.1-defs.zip
+  /usr/lib/moma/Definitions/1.9-defs.zip
   /usr/lib/moma/MoMA.exe
   /usr/lib/moma/Moma.Analyzer.dll
   /usr/lib/moma/Mono.Cecil.dll
@@ -48,6 +48,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.9-1 -----
+Version bump for mono-1.9.
 
 ----- version 1.2.6.1-1 -----
 Version bump for mono-1.2.6.

@@ -1,0 +1,21 @@
+inherit mono
+
+DESCRIPTION="Mono Migration Analyzer"
+SRC_URI="http://www.go-mono.com/archive/moma/Moma${PV//./-}.zip"
+SRC_DIR="MoMA"
+
+src_compile() { :; }
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	insinto /usr/lib/moma
+	doins MoMA.exe Moma.Analyzer.dll Mono.Cecil.dll
+
+	insinto /usr/lib/moma/Definitions
+	doins Definitions/${PV}-defs.zip
+
+	cp -r Resources/ ${D}/usr/lib/moma
+
+	mono_wrapper moma /usr/lib/moma/MoMA.exe
+}
